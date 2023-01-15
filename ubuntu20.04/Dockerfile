@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-MAINTAINER "Hiroki Takeyama"
+MAINTAINER "Vladimir Eliseev"
 
 # timezone
 RUN apt update && apt install -y tzdata; \
@@ -21,7 +21,7 @@ RUN { \
     } > /usr/local/bin/entry_point.sh; \
     chmod +x /usr/local/bin/entry_point.sh;
 
-ENV TZ Asia/Tokyo
+ENV TZ Europe/Moscow
 
 ENV ROOT_PASSWORD root
 
